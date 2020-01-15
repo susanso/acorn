@@ -10,24 +10,34 @@
 		<!-- form 태그
 			- 서버에 전송할 데이터의 양식을 지정하는 태그
 			- method : 전송방식 (get, post)
+			  -> get :  전송 data가 url에 노출
+			  -> post : 전송 data가 url에 안노출
 			- action : 전송할 서버 url
 			- input type="text" : 텍스트 양식
 			- input type="password" : 비밀번호 양식
 			- input type="submit" : 전송버튼
 			- input type="reset" : 취소버튼
 		 -->
-		<form name="Login" method="post" action="암거나.com">
+		<form name="Login" method="get" action="https://www.naver.com">
 			<table border="1">
-				<tr>
+				<tr> <!-- 1행 -->
 					<th>아이디</th>
 					<td><input type="text" name="id"/></td>
+					<!-- name="id" -> id='kim' -->
+				</tr>
+				<tr> <!-- 2행 -->
 					<th>비밀번호</th>
-					<td><input type="password" name="id"/></td>
+					<td><input type="password" name="pass"/></td>
+					<!-- name="pass" -> pass='qwe123' -->
+				</tr>
+				<tr> <!-- 3행 -->
+					<th colspan="2">
+						<input type="submit" value="전송">
+						<input type="reset" value="취소">
+					</th>
 				</tr>
 			</table>
-			
 		</form>
-		<input type="text"/>
 	</fieldset>
 
 </body>
