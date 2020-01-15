@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>checkbox, text area</title>
+<title> checkbox(다중선택), text area </title>
 </head>
 <body>
 	<form method="get" action="https://www.naver.com">
@@ -10,16 +10,21 @@
 			 <legend>관심분야</legend>
 			 <input type="checkbox" name="inter" value="in1">인터넷
 			 <input type="checkbox" name="inter" value="in2">S/W
-			 <input type="checkbox" name="inter1" value="in3">정보통신
-			 <input type="checkbox" name="inter1" value="in4">Game
+			 <input type="checkbox" name="inter" value="in3">정보통신
+			 <input type="checkbox" name="inter" value="in4">Game
+			<!-- name="inter" :inter 배열명 (다수의 값을 저장)
+				ex) 인터넷, 게임 -> inter1[0]="in1",inter[1]="in4"  -->
 		</fieldset>
-		<!-- name="inter" :inter 배열명 (다수의 값을 저장)
-				ex) 인터넷,게임 inter1[0]="in1",inter[1]="in4"  -->
+		
 		<fieldset>
 			<legend> 하고싶은 말 </legend>
-			<textarea rows="10" cols="10" name="content">
-				하고 싶은말~!
-			</textarea>
+			<textarea rows="10" cols="50" name="content">하고 싶은말~!</textarea>
+			<!-- name="contect" : content 변수명 -->
+		</fieldset>
+		
+		<fieldset>
+			<input type="submit" value="전송"/> &nbsp;&nbsp;
+			<input type="reset" value="취소"/>
 		</fieldset>
 	</form>
 </body>

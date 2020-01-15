@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> radio(단일선택), select (선택상자), file(파일선택) </title>
+</head>
+<body>
+	<form method="get" action="#">
+		<fieldset>
+			<legend>성별</legend>
+			<input type="radio" name="gender" value="남" checked/>남자
+			<input type="radio" name="gender" value="여"/>여자
+			<!-- type="radio" name="gender" : gender 변수명  
+				ex) 여자선택 -> gender="여"
+				checked :기본으로 체크하는 속성 
+			-->
+		</fieldset>
+		<fieldset>
+			<legend> 직업 선택 </legend>
+			<select name="job" size="1">
+				<option value="없음" selected>--직업을 선택하세요.--</option>
+				<option value="학생">학생</option>
+				<option value="회사원">회사원</option>
+				<option value="백수">백수</option>
+				<!-- ex) 학생을 선택을 했다. -> job의 value값은 학생(job="학생"  -->
+			</select>
+		</fieldset>
+		<fieldset>
+			<legend>파일 업로드</legend>
+			<input type="file" name="fileName" size="15"/>
+		</fieldset>
+		<fieldset>
+			<input type="submit" value="전송"/> &nbsp;&nbsp;
+			<input type="reset" value="취소"/>
+		</fieldset>
+	</form>
+</body>
+</html>

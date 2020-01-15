@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>폼 컨트롤(input) 실습</h1>
+	<form action="#">
+	
+		<fieldset>
+			<legend>회원가입</legend>
+			아이디    : <input type="text" name="id"/> &nbsp; <input type="button" value="중복확인">
+			<br>
+			비밀번호 : <input type="password" name="pass" />
+			<br>
+			이메일    : <input type="text" name="email1"/> @ <input type="text" name="email2"/>
+			<br>
+			성별
+			<br>
+			<input type="radio" name="gender" value="남"/>남자
+			<input type="radio" name="gender" value="여"/>여자
+			<br>
+			사진 <input type="file" name="fileName"/>
+			<br>
+			수신 설정
+			<br>
+			<input type="checkbox" name="good" value="go1"/>메일 수신 허용
+			<br>
+			<input type="checkbox" name="good" value="go2"/>SMS수신 허용
+			<br>
+			<input type="submit" value="전송"/> &nbsp;&nbsp;
+			<input type="reset" value="취소"/>
+		</fieldset>
+		
+			
+	</form>
+</body>
+</html>
